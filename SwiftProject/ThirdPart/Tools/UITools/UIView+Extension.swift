@@ -38,7 +38,6 @@ extension UIView{
         set{
             layer.borderColor = newValue.cgColor
         }
-        
     }
     
     //MARK:裁剪

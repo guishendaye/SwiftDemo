@@ -1,4 +1,4 @@
-#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
 project 'SwiftProject.xcodeproj'
@@ -11,6 +11,8 @@ pod 'RxSwift', '6.5.0'
 pod 'RxCocoa', '6.5.0'
 #json解析
 pod 'ObjectMapper', '~> 4.2'
+
+pod 'SwiftJSON'
 #提示框
 pod 'Toast-Swift'
 #刷新

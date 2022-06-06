@@ -36,17 +36,6 @@
                             </constraints>
                             <state key="normal" image="icon_notice"/>
                         </button>
-                        <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIG-VY-IWF">
-                            <rect key="frame" x="304" y="789" width="71" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="24" id="uMi-r0-ZIR"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <inset key="titleEdgeInsets" minX="-2" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title=" 0条消息" backgroundImage="alarmBackground">
-                                <color key="titleColor" red="0.93333333330000001" green="0.38431372549999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu9-kt-Qoe">
                             <rect key="frame" x="390" y="789" width="10" height="10"/>
                             <color key="backgroundColor" red="1" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,7 +96,7 @@
                             </state>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="QLM-OB-Icb" firstAttribute="leading" secondItem="peT-Cz-q2O" secondAttribute="trailing" constant="5" id="2dU-jN-noN"/>
                         <constraint firstItem="Jkc-Oq-zxe" firstAttribute="leading" secondItem="2v3-T7-g5f" secondAttribute="trailing" constant="5" id="4ua-ob-VXw"/>
@@ -124,19 +113,17 @@
                         <constraint firstItem="tLK-lI-bSv" firstAttribute="leading" secondItem="nxW-Xb-FW0" secondAttribute="leading" constant="18" id="RyC-KT-FYF"/>
                         <constraint firstItem="bu9-kt-Qoe" firstAttribute="leading" secondItem="Lqf-SY-dF4" secondAttribute="trailing" constant="-10" id="SRh-r4-neT"/>
                         <constraint firstItem="2v3-T7-g5f" firstAttribute="leading" secondItem="nxW-Xb-FW0" secondAttribute="leading" constant="14" id="WUz-2U-c8j"/>
-                        <constraint firstItem="vIG-VY-IWF" firstAttribute="centerY" secondItem="Lqf-SY-dF4" secondAttribute="centerY" id="XFx-An-w4v"/>
                         <constraint firstAttribute="bottom" secondItem="Lqf-SY-dF4" secondAttribute="bottom" constant="83" id="YjK-Ja-oyv"/>
                         <constraint firstItem="Lqf-SY-dF4" firstAttribute="leading" secondItem="ggW-Q6-MIU" secondAttribute="trailing" constant="10" id="fgN-uv-jM0"/>
                         <constraint firstItem="Vsh-PU-c5K" firstAttribute="leading" secondItem="nxW-Xb-FW0" secondAttribute="leading" id="jde-4E-74J"/>
                         <constraint firstItem="peT-Cz-q2O" firstAttribute="leading" secondItem="Jkc-Oq-zxe" secondAttribute="trailing" constant="30" id="omQ-Hs-M0n"/>
                         <constraint firstItem="peT-Cz-q2O" firstAttribute="centerY" secondItem="2v3-T7-g5f" secondAttribute="centerY" id="qTo-rU-IhU"/>
                         <constraint firstItem="4dj-HL-CB2" firstAttribute="centerY" secondItem="Lqf-SY-dF4" secondAttribute="centerY" id="qYa-BF-U1P"/>
-                        <constraint firstItem="Lqf-SY-dF4" firstAttribute="leading" secondItem="vIG-VY-IWF" secondAttribute="trailing" constant="1" id="vWi-qe-zCk"/>
                         <constraint firstItem="QLM-OB-Icb" firstAttribute="centerY" secondItem="peT-Cz-q2O" secondAttribute="centerY" id="vkr-Eg-sbu"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="nxW-Xb-FW0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4qf-Ft-Mvn"/>
                 <constraint firstAttribute="bottom" secondItem="nxW-Xb-FW0" secondAttribute="bottom" id="ETy-nI-0dZ"/>
@@ -147,7 +134,6 @@
                 <outlet property="blueNameLab" destination="Jkc-Oq-zxe" id="eIB-Xm-u6q"/>
                 <outlet property="shareWarnBtn" destination="4dj-HL-CB2" id="s6u-Gw-iVm"/>
                 <outlet property="timeLeftLab" destination="QLM-OB-Icb" id="7CQ-rL-g1c"/>
-                <outlet property="warnNumBtn" destination="vIG-VY-IWF" id="O4U-1W-xsB"/>
                 <outlet property="warnNumLab" destination="bu9-kt-Qoe" id="V2d-4I-RlE"/>
             </connections>
             <point key="canvasLocation" x="132" y="109"/>
@@ -155,7 +141,6 @@
     </objects>
     <resources>
         <image name="LogoLab" width="87" height="22"/>
-        <image name="alarmBackground" width="71" height="24"/>
         <image name="home_bg" width="375" height="142"/>
         <image name="icon_bt_connected_white" width="16" height="16"/>
         <image name="icon_notice" width="24" height="24"/>

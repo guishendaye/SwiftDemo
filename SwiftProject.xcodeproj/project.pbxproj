@@ -12,6 +12,11 @@
 		D837CE3127BB54F0002F5CC9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837CE3027BB54F0002F5CC9 /* LoginView.swift */; };
 		D837CE3327BB5534002F5CC9 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D837CE3227BB5534002F5CC9 /* LoginView.xib */; };
 		D851FFE327BF6C9400A3A37D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851FFE227BF6C9400A3A37D /* Utils.swift */; };
+		D85F18AC284073B200707440 /* TiemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F18AA284073B200707440 /* TiemCell.swift */; };
+		D85F18AD284073B200707440 /* TiemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85F18AB284073B200707440 /* TiemCell.xib */; };
+		D85F18B02840747200707440 /* TypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F18AE2840747200707440 /* TypeCell.swift */; };
+		D85F18B12840747200707440 /* TypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85F18AF2840747200707440 /* TypeCell.xib */; };
+		D85F18B328407B5200707440 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F18B228407B5200707440 /* TimeModel.swift */; };
 		D8638D3527C8DE5A00991A0B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8638D3427C8DE5A00991A0B /* AVFoundation.framework */; };
 		D870E0D1282CDF7900FF38F8 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870E0D0282CDF7900FF38F8 /* FirstView.swift */; };
 		D870E0D5282CE38D00FF38F8 /* FirstViewOnePart.xib in Resources */ = {isa = PBXBuildFile; fileRef = D870E0D4282CE38D00FF38F8 /* FirstViewOnePart.xib */; };
@@ -52,6 +57,11 @@
 		D837CE3027BB54F0002F5CC9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D837CE3227BB5534002F5CC9 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		D851FFE227BF6C9400A3A37D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D85F18AA284073B200707440 /* TiemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiemCell.swift; sourceTree = "<group>"; };
+		D85F18AB284073B200707440 /* TiemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TiemCell.xib; sourceTree = "<group>"; };
+		D85F18AE2840747200707440 /* TypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCell.swift; sourceTree = "<group>"; };
+		D85F18AF2840747200707440 /* TypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCell.xib; sourceTree = "<group>"; };
+		D85F18B228407B5200707440 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		D8638D3427C8DE5A00991A0B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D870E0D0282CDF7900FF38F8 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		D870E0D4282CE38D00FF38F8 /* FirstViewOnePart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewOnePart.xib; sourceTree = "<group>"; };
@@ -195,9 +205,21 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		D85F18A92840679100707440 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D85F18AA284073B200707440 /* TiemCell.swift */,
+				D85F18AB284073B200707440 /* TiemCell.xib */,
+				D85F18AE2840747200707440 /* TypeCell.swift */,
+				D85F18AF2840747200707440 /* TypeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		D870E0CA282CDF1600FF38F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D85F18A92840679100707440 /* Cell */,
 				D870E0D0282CDF7900FF38F8 /* FirstView.swift */,
 				D870E0D6282CE39E00FF38F8 /* FirstViewOnePart.swift */,
 				D870E0D4282CE38D00FF38F8 /* FirstViewOnePart.xib */,
@@ -210,6 +232,7 @@
 		D870E0CB282CDF1B00FF38F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D85F18B228407B5200707440 /* TimeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -412,8 +435,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A645D927966FEF00AC7799 /* SecondVC.xib in Resources */,
+				D85F18B12840747200707440 /* TypeCell.xib in Resources */,
 				D870E0D5282CE38D00FF38F8 /* FirstViewOnePart.xib in Resources */,
 				D8A645BC27966F4D00AC7799 /* LaunchScreen.storyboard in Resources */,
+				D85F18AD284073B200707440 /* TiemCell.xib in Resources */,
 				D870E0DB282CE86F00FF38F8 /* FirstViewTwoPart.xib in Resources */,
 				D8A645B927966F4D00AC7799 /* Assets.xcassets in Resources */,
 				D837CE3327BB5534002F5CC9 /* LoginView.xib in Resources */,
@@ -487,10 +512,13 @@
 				D8A645D827966FEF00AC7799 /* SecondVC.swift in Sources */,
 				D8BEAB3927CF676E0097CFDE /* LoginModel.swift in Sources */,
 				D870E0D7282CE39E00FF38F8 /* FirstViewOnePart.swift in Sources */,
+				D85F18AC284073B200707440 /* TiemCell.swift in Sources */,
 				D8A645DA27966FEF00AC7799 /* FirstVC.swift in Sources */,
+				D85F18B328407B5200707440 /* TimeModel.swift in Sources */,
 				D879909627D06AED00F4D3C8 /* UIImage+Extension.swift in Sources */,
 				D837CE2827BB5202002F5CC9 /* Const.swift in Sources */,
 				D870E0D9282CE85400FF38F8 /* FirstViewTwoPart.swift in Sources */,
+				D85F18B02840747200707440 /* TypeCell.swift in Sources */,
 				D879909027D06AED00F4D3C8 /* UIImageView+Extension.swift in Sources */,
 				D851FFE327BF6C9400A3A37D /* Utils.swift in Sources */,
 				D879909427D06AED00F4D3C8 /* UIButton+Extension.swift in Sources */,
@@ -663,7 +691,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "-234.SwiftProject";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sibionic.CGM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_ENABLE_BATCH_MODE = NO;
@@ -700,7 +728,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "-234.SwiftProject";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sibionic.CGM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_ENABLE_BATCH_MODE = NO;

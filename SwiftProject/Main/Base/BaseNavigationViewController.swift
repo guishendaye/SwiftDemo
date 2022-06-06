@@ -54,7 +54,7 @@ class BaseNavigationViewController: UINavigationController, UIGestureRecognizerD
     //MARK: 视图控制器将要显示时调用
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         let classStr = String (describing: viewController.self)
-        debugLog(message: String(format: "当前VC + %@", classStr))
+        GJLog(message: String(format: "当前VC + %@", classStr))
         
         if viewController.view.tag == 10086 || (viewController is MainTabBarVC){
             self.setNavigationBarHidden(true, animated: animated)

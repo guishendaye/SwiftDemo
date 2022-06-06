@@ -16,6 +16,7 @@ PODS:
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SnapKit (5.0.1)
+  - SwiftJSON (0.1.0)
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
@@ -28,10 +29,11 @@ DEPENDENCIES:
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
   - SnapKit
+  - SwiftJSON
   - Toast-Swift
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - IQKeyboardManagerSwift
     - Kingfisher
@@ -43,6 +45,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
+    - SwiftJSON
     - Toast-Swift
 
 SPEC CHECKSUMS:
@@ -57,8 +60,9 @@ SPEC CHECKSUMS:
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftJSON: f076e9dcd530f2fa3c98f18bb203ae9253fdbc75
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 561d01f572dce13ae85ec6bd50995020eacbdc9d
+PODFILE CHECKSUM: 88c178a4a83912147d8e4deefcf7cc7dc75e4d14
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

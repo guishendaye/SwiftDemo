@@ -20,7 +20,7 @@ class FirstView: UIView {
 
 extension FirstView {
     func setUpSubView(){
-        self.backgroundColor = .white
+        self.backgroundColor = .clear
         let firstViewOnePart = FirstViewOnePart.instantiateFromNib(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: STATUS_BAR_HEIGHT + 120))
         self.addSubview(firstViewOnePart)
         

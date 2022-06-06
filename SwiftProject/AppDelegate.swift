@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     ///跳转登录页
     func configLoginWindow(){
-        let loginVC = LoginVC()
+        let loginVC = FirstVC()
         let nav = BaseNavigationViewController.init(rootViewController: loginVC)
         self.window?.rootViewController = nav
         window?.makeKeyAndVisible()

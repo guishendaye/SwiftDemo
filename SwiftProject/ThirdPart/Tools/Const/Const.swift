@@ -26,9 +26,12 @@ let SAFE_BOTTOM_HEIGHT = IS_iPHONEX_TYPE ? 34 : 0
 let TABBAR_HEIGHT = IS_iPHONEX_TYPE ? 83.0 : 49.0
 //MARK: 获取AppDelegate的对象
 let APPDELEGATE = ((UIApplication.shared.delegate) as! AppDelegate)
+//MARK: Window
 let KKEYWINDOW = UIApplication.shared.keyWindow
+//MARK: 主题色
+let MAINCOLOR = UIColor.hex("00D5B8")
 //MARK: 自定义高效率的 NSLog
-func debugLog<T>(message: T,
+func GJLog<T>(message: T,
               file: String = #file,
               method: String = #function,
               line: Int = #line)
